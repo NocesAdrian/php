@@ -8,8 +8,14 @@ This repository contains my PHP practice projects. It includes basic scripts and
 
 ## How to Use
 1. Clone or download this repository.
-2. Navigate to the project directory.
-3. Run PHP scripts using:
+   ```bash
+   git clone https://github.com/NocesAdrian/php.git
+   ```
+3. Navigate to the project directory.
+   ```bash
+   cd php/
+   ```
+5. Run PHP scripts using:
    ```sh
    php filename.php
    ```
