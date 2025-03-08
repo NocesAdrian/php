@@ -13,7 +13,7 @@ This repository contains my PHP practice projects. It includes basic scripts and
    ```
 3. Navigate to the project directory.
    ```bash
-   cd php
+   cd php/
    ```
 5. Run PHP scripts using:
    ```sh
