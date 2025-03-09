@@ -8,7 +8,7 @@ The example below shows how to use some of the elements in $_SERVER:
 
 */
 
-echo $_SERVER['PHP_SELF']."<br><br>";
+echo $_SERVER['PHP_SELF']."<br><br>"; // get the current php page file path
 echo $_SERVER['GATEWAY_INTERFACE']."<br><br>";
 echo $_SERVER['SERVER_ADDR']."<br><br>";
 echo $_SERVER['SERVER_NAME']."<br><br>";
