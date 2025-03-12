@@ -1,0 +1,65 @@
+PHP Manipulating Files
+PHP has several functions for creating, reading, uploading, and editing files.
+
+
+Be careful when manipulating files!
+
+When you are manipulating files you must be very careful.
+You can do a lot of damage if you do something wrong. Common errors are: editing the wrong file,
+filling a hard-drive with garbage data, and deleting the content of a file by accident.
+
+The readfile() function reads a file and writes it to the output buffer.
+
+PHP Open File - fopen()
+A better method to open files is with the fopen() function. 
+This function gives you more options than the readfile() function.
+
+The first parameter of fopen() contains the name of the file to be opened and the 
+second parameter specifies in which mode the file should be opened. 
+The following example also generates a message if the fopen() 
+function is unable to open the specified file:
+
+The fgets() function is used to read a single line from a file.
+
+The example below outputs the first line of the "webdictionary.txt" file:
+
+Example
+<?php
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+echo fgets($myfile);
+fclose($myfile);
+?>
+
+PHP Check End-Of-File - feof()
+The feof() function checks if the "end-of-file" (EOF) has been reached.
+
+The feof() function is useful for looping through data of unknown length.
+
+The example below reads the "webdictionary.txt" file line by line, until end-of-file is reached:
+
+Example
+<?php
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+// Output one line until end-of-file
+while(!feof($myfile)) {
+  echo fgets($myfile) . "<br>";
+}
+fclose($myfile);
+?>
+
+
+PHP Read Single Character - fgetc()
+The fgetc() function is used to read a single character from a file.
+
+The example below reads the "webdictionary.txt" file character by character, until end-of-file is reached:
+
+Example
+<?php
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+// Output one character until end-of-file
+while(!feof($myfile)) {
+  echo fgetc($myfile);
+}
+fclose($myfile);
+?>
+

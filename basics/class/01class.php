@@ -17,8 +17,7 @@ class people {
     public $name = "adrian"; // can be accessed outside class
     protected $birthdate = 11/11/2006; // only be used inside class or subclass
     private $relationship = "single"; // to only be accessed only within the class not either subclasses
-}
-
+__construct() is like the main function of class where everthing runs in a class
 
 */
 
