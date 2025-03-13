@@ -1,0 +1,36 @@
+What is callback function?
+basically passing a function value into arguments and later the arguments 
+get executed having the function power that is passed to arguments
+
+basically you have a function and now the value of function will now be passed to arguments
+
+// we have a()
+function a() {
+    print b
+}
+
+is passed to argumentb
+
+now a() functions will be passed to argumentb() all things function a() have, argumentb() will now own too 
+anotherFunction(argumentb) {
+    argumentb() // is now callable as function inside another function // is now have value: print b
+}
+
+for example you have a function
+
+function callme() {
+    echo "calling you";
+}
+
+and another function
+
+function callLater($argument) {
+    $argument();
+}
+
+// here you passed the first function as an argument for the second function
+callLater('callme');
+
+executing a function inside a function
+
+better used as costumization
