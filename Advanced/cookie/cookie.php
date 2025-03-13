@@ -1,7 +1,7 @@
 <?php
 $cookie_name = "user";
 $cookie_value = "John Doe";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day  // The setcookie() function must appear BEFORE the <html> tag.
+setcookie($cookie_name, $cookie_value, time() + (86400), "/"); // 86400 = 1 day  // The setcookie() function must appear BEFORE the <html> tag.
 ?>
 <html>
 <body>

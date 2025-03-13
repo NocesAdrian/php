@@ -1,0 +1,49 @@
+Get PHP Session Variable Values
+Next, we create another page called "demo_session2.php". From this page, 
+we will access the session information we set on the first page ("demo_session1.php").
+
+Notice that session variables are not passed individually to each new page, 
+// cant access variable when session_start() is not declared
+
+instead they are retrieved from the session we open at the beginning of each page (session_start()). 
+// variables will be accessed when session_start is declared at the beginning before html tags
+
+Also notice that all session variable values are stored in the global $_SESSION variable:
+
+// this access the variables that are saved on $_SESSION[] global variable array
+
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+// Echo session variables that were set on previous page
+echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
+echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+?>
+
+</body>
+</html>
+
+
+// Another way to show all the session variable values for a user session is to run the following code:
+// print_r($_SESSION);
+
+Example
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+print_r($_SESSION);
+?>
+
+</body>
+</html>

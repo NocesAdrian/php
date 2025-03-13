@@ -1,0 +1,2 @@
+print_r saves everything whatever is in global variables?
+When you use print_r($GLOBALS) in PHP, it will display all global variables, constants, and functions that are available in the current script.

@@ -1,8 +1,26 @@
 What is a Cookie?
+
+the key term is for "individuality"
+
 A cookie is often used to identify a user. 
 A cookie is a small file that the server embeds on the user's computer. 
 Each time the same computer requests a page with a browser, it will send the cookie too. 
 With PHP, you can both create and retrieve cookie values.
+
+For short-term use = Session
+For long-term use = Cookies
+For security = Combine sessions with database validation
+
+cookies are useful for "remember me" features
+
+every users has each own preference and each of users do different things
+so if you want your website to remember what a specific user did so  next time they login
+their preference will not go back to default
+
+like you have an account to a website on that account you have save files
+only your account would have that files not others account
+
+cookies are best for "individuality"
 
 Create Cookies With PHP
 A cookie is created with the setcookie() function.
