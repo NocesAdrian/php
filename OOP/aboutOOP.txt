@@ -1,0 +1,16 @@
+// this is a class a template for parts of objects
+class user { 
+    // this is a class variable called a property
+    public $name; 
+    // this is a class function called a method
+    public function __construct($argument) { 
+        // this is modifying class property $name, passing the $argument values to class property $name
+        $this->name = $argument;
+    }
+}
+
+$user1 = new user('adrian'); // this is object made by class or molded by class to be created
+
+class person extends user {
+    // this is subclass
+}

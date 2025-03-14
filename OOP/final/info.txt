@@ -1,0 +1,36 @@
+PHP - The final Keyword
+The final keyword can be used to prevent class inheritance or to prevent method overriding.
+
+The following example shows how to prevent class inheritance:
+
+Example
+<?php
+final class Fruit {
+  // some code
+}
+
+// will result in error
+class Strawberry extends Fruit {
+  // some code
+}
+?>
+
+The following example shows how to prevent method overriding:
+
+Example
+<?php
+class Fruit {
+  final public function intro() {
+    // some code
+  }
+}
+
+class Strawberry extends Fruit {
+  // will result in error
+  public function intro() {
+    // some code
+  }
+}
+?>
+
+In PHP, the final keyword can be used with methods and classes
