@@ -1,0 +1,44 @@
+PHP - What are Interfaces?
+Interfaces allow you to specify what methods a class should implement.
+
+just like implementing a set of rules for the class. forces class to follow a rules or lets say forces a class to follow a methods
+
+PHP - Using Interfaces
+To implement an interface, a class must use the "implements" keyword.
+
+A class that implements an interface must implement all of the interface's methods.
+
+example: 
+
+// this foces the class that use interface to make a method that is inside the interface
+<?php
+interface Animal {
+  public function makeSound();
+}
+
+
+// to use a interface we use the keyword "implements"
+class Cat implements Animal {
+  public function makeSound() {
+    echo "Meow";
+  }
+}
+
+$animal = new Cat();
+$animal->makeSound();
+?>
+
+
+PHP - Interfaces vs. Abstract Classes
+Interface are similar to abstract classes. The difference between interfaces and abstract classes are:
+
+Interfaces cannot have properties, while abstract classes can
+All interface methods must be public, while abstract class methods is public or protected
+All methods in an interface are abstract, so they cannot be implemented in code and the abstract keyword is not necessary
+Classes can implement an interface while inheriting from another class at the same time
+
+think of it as a set of rules when you join something like country to follow
+
+interface is a set of rules
+
+class hello implements means we will implement the rules of this interface in the class to follow
