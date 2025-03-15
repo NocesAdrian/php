@@ -1,0 +1,21 @@
+PHP - What are Abstract Classes and Methods?
+Abstract classes and methods are when the parent class has a named method, but need its child class(es) to fill out the tasks.
+
+An abstract class is a class that contains at least one abstract method. An abstract method is a 
+method that is declared, but not implemented in the code.
+
+-> abstract methods and properties are designed to force all subclasses that extend the abstract class to implement them 
+(or define them). When you define an abstract method or abstract property in an abstract class, 
+it ensures that every subclass must provide its own implementation for those methods or properties.
+
+An abstract class or method is defined with the abstract keyword:
+
+<?php
+abstract class ParentClass {
+  abstract public function someMethod1();
+  abstract public function someMethod2($name, $color);
+  abstract public function someMethod3() : string;
+}
+?>
+
+purpose is to force subclass to make this method or property
