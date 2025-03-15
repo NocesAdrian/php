@@ -1,0 +1,23 @@
+Using Namespaces
+Any code that follows a namespace declaration is operating inside the namespace, 
+so classes that belong to the namespace can be instantiated without any qualifiers. 
+To access classes from outside a namespace, the class needs to have the namespace attached to it.
+
+Example
+Use classes from the Html namespace:
+
+<?php
+$table = new Html\Table();
+$row = new Html\Row();
+?>
+
+When many classes from the same namespace are being used at the same time, it is easier to use the namespace keyword:
+
+Example
+Use classes from the Html namespace without the need for the Html\qualifier:
+
+<?php
+namespace Html; // re declare the namespace for easier access when making objects outside the namespace
+$table = new Table();
+$row = new Row();
+?>

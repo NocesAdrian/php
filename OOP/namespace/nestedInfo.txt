@@ -1,0 +1,8 @@
+For further organization, it is possible to have nested namespaces:
+
+Syntax
+Declare a namespace called Html inside a namespace called Code:
+
+<?php
+namespace Code\Html; thinks like you created a Html folder inside Code folder
+?>

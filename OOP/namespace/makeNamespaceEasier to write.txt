@@ -1,0 +1,18 @@
+Namespace Alias
+It can be useful to give a namespace or class an alias to make it easier to write. This is done with the use keyword:
+
+Example
+Give a namespace an alias:
+
+<?php
+use Html as H;
+$table = new H\Table(); // we can now use namespace shorter name
+?>
+
+Example
+Give a class an alias:
+
+<?php
+use Html\Table as T;
+$table = new T(); we can make classname shorter to for easier writing
+?>
